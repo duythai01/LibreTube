@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Information -->
+    <key>CFBundleName</key>
+    <string>LibreTube</string>
+    <key>CFBundleDisplayName</key>
+    <string>LibreTube</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.github.libretube</string>
+    <key>CFBundleVersion</key>
+    <string>1.0.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    
+    <!-- App Icons -->
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconName</key>
+            <string>ic_launcher</string>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>ic_launcher</string>
+            </array>
+            <key>UIPrerenderedIcon</key>
+            <false/>
+        </dict>
+    </dict>
+    
+    <!-- Launch Screen -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    
+    <!-- Supported Interface Orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Supported Interface Orientations for iPad -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Background Modes -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+        <string>background-processing</string>
+        <string>background-fetch</string>
+    </array>
+    
+    <!-- URL Schemes -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.github.libretube</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>libretube</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Associated Domains for Universal Links -->
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:youtube.com</string>
+        <string>applinks:www.youtube.com</string>
+        <string>applinks:m.youtube.com</string>
+        <string>applinks:music.youtube.com</string>
+        <string>applinks:youtu.be</string>
+        <string>applinks:piped.video</string>
+        <string>applinks:piped.projectsegfau.lt</string>
+        <string>applinks:piped.adminforge.de</string>
+        <string>applinks:piped.astartes.nl</string>
+        <string>applinks:piped.coldforge.xyz</string>
+        <string>applinks:piped.drgns.space</string>
+        <string>applinks:piped.ducks.party</string>
+        <string>applinks:piped.lunar.icu</string>
+        <string>applinks:piped.ngn.tf</string>
+        <string>applinks:piped.r4fo.com</string>
+        <string>applinks:piped.smnz.de</string>
+        <string>applinks:piped.syncpundit.io</string>
+        <string>applinks:piped.us.projectsegfau.lt</string>
+    </array>
+    
+    <!-- Document Types for File Sharing -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Video Files</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.movie</string>
+                <string>public.video</string>
+                <string>public.audio</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Text Files</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.text</string>
+                <string>public.plain-text</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Imported Type Declarations -->
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>com.github.libretube.video</string>
+            <key>UTTypeDescription</key>
+            <string>LibreTube Video</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.movie</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>ltv</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- Exported Type Declarations -->
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>com.github.libretube.playlist</string>
+            <key>UTTypeDescription</key>
+            <string>LibreTube Playlist</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>ltp</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- Privacy Permissions -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>LibreTube needs microphone access for voice search and audio recording features.</string>
+    
+    <key>NSCameraUsageDescription</key>
+    <string>LibreTube needs camera access for QR code scanning and video recording features.</string>
+    
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>LibreTube needs photo library access to save downloaded videos and thumbnails.</string>
+    
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>LibreTube needs location access to provide location-based content recommendations.</string>
+    
+    <!-- Network Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>youtube.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+            <key>piped.video</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+            </dict>
+        </dict>
+    </dict>
+    
+    <!-- User Activity Types -->
+    <key>NSUserActivityTypes</key>
+    <array>
+        <string>com.github.libretube.watch-video</string>
+        <string>com.github.libretube.open-channel</string>
+        <string>com.github.libretube.open-playlist</string>
+        <string>com.github.libretube.search</string>
+    </array>
+    
+    <!-- Notification Categories -->
+    <key>UNNotificationCategories</key>
+    <array>
+        <dict>
+            <key>identifier</key>
+            <string>com.github.libretube.download</string>
+            <key>actions</key>
+            <array>
+                <dict>
+                    <key>identifier</key>
+                    <string>pause-download</string>
+                    <key>title</key>
+                    <string>Pause</string>
+                    <key>options</key>
+                    <array>
+                        <string>foreground</string>
+                    </array>
+                </dict>
+                <dict>
+                    <key>identifier</key>
+                    <string>cancel-download</string>
+                    <key>title</key>
+                    <string>Cancel</string>
+                    <key>options</key>
+                    <array>
+                        <string>destructive</string>
+                    </array>
+                </dict>
+            </array>
+        </dict>
+        <dict>
+            <key>identifier</key>
+            <string>com.github.libretube.playback</string>
+            <key>actions</key>
+            <array>
+                <dict>
+                    <key>identifier</key>
+                    <string>play-pause</string>
+                    <key>title</key>
+                    <string>Play/Pause</string>
+                    <key>options</key>
+                    <array>
+                        <string>foreground</string>
+                    </array>
+                </dict>
+                <dict>
+                    <key>identifier</key>
+                    <string>next-track</string>
+                    <key>title</key>
+                    <string>Next</string>
+                    <key>options</key>
+                    <array>
+                        <string>foreground</string>
+                    </array>
+                </dict>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- App Store Information -->
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    
+    <!-- Minimum iOS Version -->
+    <key>MinimumOSVersion</key>
+    <string>15.0</string>
+    
+    <!-- Required Device Capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    
+    <!-- Supported Devices -->
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>1</integer>
+        <integer>2</integer>
+    </array>
+    
+    <!-- Status Bar Style -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    
+    <!-- View Controller Based Status Bar -->
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+    
+    <!-- Supported Languages -->
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>en</string>
+        <string>es</string>
+        <string>fr</string>
+        <string>de</string>
+        <string>it</string>
+        <string>pt</string>
+        <string>ru</string>
+        <string>zh</string>
+        <string>ja</string>
+        <string>ko</string>
+    </array>
+    
+    <!-- Development Language -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    
+    <!-- App Store Categories -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.entertainment</string>
+    
+    <!-- App Store Keywords -->
+    <key>LSApplicationKeywords</key>
+    <array>
+        <string>youtube</string>
+        <string>video</string>
+        <string>streaming</string>
+        <string>music</string>
+        <string>piped</string>
+        <string>privacy</string>
+    </array>
+    
+    <!-- App Store Description -->
+    <key>LSApplicationDescription</key>
+    <string>LibreTube is a privacy-focused YouTube client that allows you to watch videos without tracking.</string>
+    
+    <!-- App Store Copyright -->
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2024 LibreTube. All rights reserved.</string>
+</dict>
+</plist>

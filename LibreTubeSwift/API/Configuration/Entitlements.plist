@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Groups -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.github.libretube</string>
+    </array>
+    
+    <!-- Associated Domains -->
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:youtube.com</string>
+        <string>applinks:www.youtube.com</string>
+        <string>applinks:m.youtube.com</string>
+        <string>applinks:music.youtube.com</string>
+        <string>applinks:youtu.be</string>
+        <string>applinks:piped.video</string>
+        <string>applinks:piped.projectsegfau.lt</string>
+        <string>applinks:piped.adminforge.de</string>
+        <string>applinks:piped.astartes.nl</string>
+        <string>applinks:piped.coldforge.xyz</string>
+        <string>applinks:piped.drgns.space</string>
+        <string>applinks:piped.ducks.party</string>
+        <string>applinks:piped.lunar.icu</string>
+        <string>applinks:piped.ngn.tf</string>
+        <string>applinks:piped.r4fo.com</string>
+        <string>applinks:piped.smnz.de</string>
+        <string>applinks:piped.syncpundit.io</string>
+        <string>applinks:piped.us.projectsegfau.lt</string>
+    </array>
+    
+    <!-- Background Modes -->
+    <key>com.apple.developer.background-modes</key>
+    <array>
+        <string>audio</string>
+        <string>background-processing</string>
+        <string>background-fetch</string>
+    </array>
+    
+    <!-- Network Extensions -->
+    <key>com.apple.developer.networking.multipath</key>
+    <true/>
+    
+    <!-- WiFi Information -->
+    <key>com.apple.developer.networking.wifi-info</key>
+    <true/>
+    
+    <!-- Push Notifications -->
+    <key>aps-environment</key>
+    <string>development</string>
+    
+    <!-- HealthKit -->
+    <key>com.apple.developer.healthkit</key>
+    <true/>
+    
+    <!-- HealthKit Access -->
+    <key>com.apple.developer.healthkit.access</key>
+    <array/>
+    
+    <!-- HomeKit -->
+    <key>com.apple.developer.homekit</key>
+    <true/>
+    
+    <!-- CarPlay -->
+    <key>com.apple.developer.carplay-audio</key>
+    <true/>
+    
+    <!-- Siri -->
+    <key>com.apple.developer.siri</key>
+    <true/>
+    
+    <!-- Apple Pay -->
+    <key>com.apple.developer.in-app-payments</key>
+    <array>
+        <string>merchant.com.github.libretube</string>
+    </array>
+    
+    <!-- CloudKit -->
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <string>iCloud.com.github.libretube</string>
+    </array>
+    
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudKit</string>
+    </array>
+    
+    <!-- iCloud Key-Value Storage -->
+    <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+    <string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
+    
+    <!-- Maps -->
+    <key>com.apple.developer.maps</key>
+    <true/>
+    
+    <!-- Game Center -->
+    <key>com.apple.developer.game-center</key>
+    <true/>
+    
+    <!-- Wallet -->
+    <key>com.apple.developer.payment-pass-provisioning</key>
+    <true/>
+    
+    <!-- Personal VPN -->
+    <key>com.apple.developer.networking.vpn.api</key>
+    <array>
+        <string>allow-vpn</string>
+    </array>
+    
+    <!-- Hotspot Configuration -->
+    <key>com.apple.developer.networking.HotspotConfiguration</key>
+    <true/>
+    
+    <!-- Network Extensions -->
+    <key>com.apple.developer.networking.networkextension</key>
+    <array>
+        <string>packet-tunnel-provider</string>
+        <string>app-proxy-provider</string>
+        <string>content-filter-provider</string>
+    </array>
+    
+    <!-- Family Controls -->
+    <key>com.apple.developer.family-controls</key>
+    <true/>
+    
+    <!-- Managed Settings -->
+    <key>com.apple.developer.family-controls.override</key>
+    <true/>
+    
+    <!-- Screen Time -->
+    <key>com.apple.developer.family-controls.override</key>
+    <true/>
+    
+    <!-- Focus Status -->
+    <key>com.apple.developer.focus-status</key>
+    <true/>
+    
+    <!-- Live Activities -->
+    <key>com.apple.developer.usernotifications.time-sensitive</key>
+    <true/>
+    
+    <!-- Critical Alerts -->
+    <key>com.apple.developer.usernotifications.communication</key>
+    <true/>
+    
+    <!-- WeatherKit -->
+    <key>com.apple.developer.weatherkit</key>
+    <true/>
+    
+    <!-- StoreKit -->
+    <key>com.apple.developer.in-app-purchase</key>
+    <true/>
+    
+    <!-- App Clips -->
+    <key>com.apple.developer.on-demand-install-capable</key>
+    <true/>
+    
+    <!-- App Store Connect API -->
+    <key>com.apple.developer.appstoreconnect-apikey</key>
+    <true/>
+    
+    <!-- App Store Server API -->
+    <key>com.apple.developer.appstoreserver.notifications</key>
+    <true/>
+    
+    <!-- App Store Server API V2 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2</key>
+    <true/>
+    
+    <!-- App Store Server API V2.1 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.1</key>
+    <true/>
+    
+    <!-- App Store Server API V2.2 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.2</key>
+    <true/>
+    
+    <!-- App Store Server API V2.3 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.3</key>
+    <true/>
+    
+    <!-- App Store Server API V2.4 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.4</key>
+    <true/>
+    
+    <!-- App Store Server API V2.5 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.5</key>
+    <true/>
+    
+    <!-- App Store Server API V2.6 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.6</key>
+    <true/>
+    
+    <!-- App Store Server API V2.7 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.7</key>
+    <true/>
+    
+    <!-- App Store Server API V2.8 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.8</key>
+    <true/>
+    
+    <!-- App Store Server API V2.9 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.9</key>
+    <true/>
+    
+    <!-- App Store Server API V2.10 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.10</key>
+    <true/>
+    
+    <!-- App Store Server API V2.11 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.11</key>
+    <true/>
+    
+    <!-- App Store Server API V2.12 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.12</key>
+    <true/>
+    
+    <!-- App Store Server API V2.13 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.13</key>
+    <true/>
+    
+    <!-- App Store Server API V2.14 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.14</key>
+    <true/>
+    
+    <!-- App Store Server API V2.15 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.15</key>
+    <true/>
+    
+    <!-- App Store Server API V2.16 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.16</key>
+    <true/>
+    
+    <!-- App Store Server API V2.17 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.17</key>
+    <true/>
+    
+    <!-- App Store Server API V2.18 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.18</key>
+    <true/>
+    
+    <!-- App Store Server API V2.19 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.19</key>
+    <true/>
+    
+    <!-- App Store Server API V2.20 -->
+    <key>com.apple.developer.appstoreserver.notifications.v2.20</key>
+    <true/>
+</dict>
+</plist>
