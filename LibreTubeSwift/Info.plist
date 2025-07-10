@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Information -->
+    <key>CFBundleDisplayName</key>
+    <string>LibreTube</string>
+    <key>CFBundleName</key>
+    <string>LibreTube</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.github.libretube</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    
+    <!-- App Icons -->
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>AppIcon</string>
+            </array>
+            <key>CFBundleIconName</key>
+            <string>AppIcon</string>
+        </dict>
+    </dict>
+    
+    <!-- Supported Device Orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Supported Device Orientations for iPad -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Background Modes -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+        <string>background-processing</string>
+        <string>background-fetch</string>
+    </array>
+    
+    <!-- Required Device Capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    
+    <!-- Supported Platforms -->
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    
+    <!-- Minimum iOS Version -->
+    <key>MinimumOSVersion</key>
+    <string>15.0</string>
+    
+    <!-- Privacy Permissions -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>youtube.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+            <key>youtu.be</key>
+                <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+    
+    <!-- Network Usage Description -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>LibreTube needs access to your local network to stream videos and download content.</string>
+    
+    <!-- URL Schemes for Deep Linking -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.github.libretube</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>libretube</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Document Types for File Sharing -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>Video Files</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.movie</string>
+                <string>public.video</string>
+                <string>public.audio</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Imported Type Declarations -->
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>public.movie</string>
+            <key>UTTypeDescription</key>
+            <string>Video Files</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>mp4</string>
+                    <string>mov</string>
+                    <string>avi</string>
+                    <string>mkv</string>
+                </array>
+                <key>public.mime-type</key>
+                <array>
+                    <string>video/mp4</string>
+                    <string>video/quicktime</string>
+                    <string>video/x-msvideo</string>
+                    <string>video/x-matroska</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- Exported Type Declarations -->
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>com.github.libretube.video</string>
+            <key>UTTypeDescription</key>
+            <string>LibreTube Video</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.movie</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>ltv</string>
+                </array>
+                <key>public.mime-type</key>
+                <array>
+                    <string>application/x-libretube-video</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- App Category -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.entertainment</string>
+    
+    <!-- Launch Screen -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    
+    <!-- Status Bar Style -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    
+    <!-- View Controller Based Status Bar -->
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+    
+    <!-- Supported Interface Orientations for Launch Screen -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Enable Multiple Windows (for iPad) -->
+    <key>UIApplicationSupportsMultipleScenes</key>
+    <true/>
+    
+    <!-- Scene Configuration -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <true/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</dict>
+</plist>
